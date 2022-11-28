@@ -374,8 +374,6 @@ function processData() {
     if (array_key_exists("codes", $receivedData)) { // TODO: hässlich
         $receivedData["documents"] = prepareDocumentData($receivedData["documents"]);    
         $totalCodeFrequency = getTotalCodeFrequencyInDocuments($receivedData["documents"]);
-        pretty_print($receivedData);
-        pretty_print($totalCodeFrequency);
         $databaseDocuments = $database->getDocumentsForCodesProcessing($_SESSION["projectID"]);
         LookForMissingDocuments($receivedData, $databaseDocuments);
         $receivedData["documents"] = addDatabaseIDtoDocuments($receivedData["documents"], $databaseDocuments);
@@ -385,9 +383,9 @@ function processData() {
     }
 }
 
-session_start();
 
 if (isset($_POST["navigation"]) && $_POST["navigation"] === "save") {
+    session_start();
     processData();
 }
 RedirectUser::returnToProjectPage();

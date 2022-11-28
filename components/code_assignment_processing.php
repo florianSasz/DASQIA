@@ -106,7 +106,6 @@ function processData() {
 }
 
 session_start();
-
 if (isset($_POST["navigation"]) && $_POST["navigation"] === "save") {
     processData();
 }

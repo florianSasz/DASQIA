@@ -91,7 +91,6 @@ class DataCollection {
         this.researchQuestions = researchQuestions;
         this.codes = codes;
         this.groups =  this.setGroups();
-        console.log(this.groups);
     }
 
     getCodeList() {
@@ -816,7 +815,9 @@ class BuildTable {
         let codeCheckboxes = document.querySelectorAll("input[name='" + codeID + "']");
         for (let i = 0; i < codeCheckboxes.length; i++) {
             codeCheckboxes[i].checked = true;
-            assignment.addAssignment(codeCheckboxes[i].name, codeCheckboxes[i].value)
+            if (codeCheckboxes[i].value != "all") {
+                assignment.addAssignment(codeCheckboxes[i].name, codeCheckboxes[i].value)
+            }
         }
     }
 } 

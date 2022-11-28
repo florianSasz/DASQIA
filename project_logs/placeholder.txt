@@ -1,0 +1,3 @@
+this directory holds all log files of the projects
+
+the number at the end of the filename is the database index to the project

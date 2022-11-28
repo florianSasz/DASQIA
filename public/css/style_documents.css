@@ -1,0 +1,62 @@
+.documentsBubble {
+    min-width: 600px;
+    padding: 20px;
+}
+
+.navigationButtons {
+    margin-top: 30px;
+}
+
+.removeButtonPos {
+    position: relative;
+    top: 5px;
+}
+
+.readOnly { 
+    border: 0 !important; 
+    cursor: default;
+}
+
+.documentsTable {
+    border-spacing: 0;
+}
+
+.tableRowDark {
+    background-color: rgb(240, 240, 240);
+}
+
+.documentsTD {
+    padding-right: 20px;
+}
+
+.dot {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+}
+
+.filledDotBlue {
+    background: var(--blueText);
+}
+
+.filledDotOrange {
+    background: rgb(255, 188, 5); /* rgb(255, 50, 50) */
+}
+
+.orangeText {
+    color: rgb(255, 188, 5);
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.aliasStatusInfo {
+    margin-left: 20px;
+}
+
+.newNameInput {
+    margin-top: 5px;
+    display: block;
+}

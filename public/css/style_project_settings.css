@@ -1,0 +1,84 @@
+.projectSettingsBubble {
+    padding: 20px;
+    padding-top: 5px;
+}
+
+.projectMembersContainer {
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+.leaderEmail {
+    margin-left: 20px;
+}
+
+.memberVisualContainer {
+    padding: 5px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    border: 0;
+    transition-duration: 0.3s;
+}
+
+.memberContainer {
+    margin-bottom: 20px;
+}
+
+.EditAliasContainer {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: var(--bubbleBorderRad);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.EditAliasVisualContainer {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.EditAliasVisualContainer:hover {
+    cursor: pointer;
+    background-color: rgb(255, 100, 100);
+    color: white;
+} 
+
+.aliasMenuElements {
+    margin-right: 5px;
+}
+
+.memberName {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.memberButton {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.removeMember {
+    background-color: rgb(255, 50, 50); /* rgb(255, 100, 100); */
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+}
+
+.newLeader {
+    background-color: #37c439; /* #50bb52; */
+    color: white;
+    transition-duration: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.leftSideBar {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hintPosition {
+    position: relative;
+    bottom: 3px;
+    margin-left: 10px;
+}

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Code-Matrix-Browser</title>
+<style>
+th {text-align:left;}
+body {margin: 20px;}
+.title { font-family: Calibri; font-size: 18px; font-weight: bold; margin-bottom: 10px }
+.Style0 {background-color: rgb(179, 203, 227); color: rgb(0, 0, 0); font-weight: bold; font-family: Calibri, Arial; font-size: 10.0pt; padding: 4px; padding-left: 4px; vertical-align:top; }
+.Style1 {background-color: rgb(240, 245, 250); color: rgb(0, 0, 0); font-weight: normal; font-family: Calibri, Arial; font-size: 10.0pt; padding: 4px; padding-left: 4px; vertical-align:top; }
+.BHI { border-bottom: 1px rgb(191, 191, 191) solid;  }
+.BHB { border-bottom: 1px rgb(191, 191, 191) solid;  }
+.BHT { border-bottom: 1px rgb(191, 191, 191) solid;  }
+</style>
+</head>
+<body><div style="display: inline-block;" id="content_mq_table_7">
+<div class="title">Code-Matrix-Browser</div>
+<table id="mq_table_7" style="empty-cells: show;" cellpadding="0" cellspacing="0" >
+<tr>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>&nbsp;</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Politeness</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Reliability</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Customizability</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Voice</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Voice\Gender of the voice</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Responsiveness</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Add-Free</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Longevity</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects New\Longevity\Lacking previous features in future versions</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Comprehension</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Comprehension\Pro spez. VUI: gute Spracherkennung</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Comprehension\Contra spez. VUI: Missverständnisse Eingabe nicht verstanden</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Comprehension\neg. Erfahrung: VUI versteht den Nutzer nicht</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Aesthetic</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Aesthetic\Verbesserungsvorschlag: Dezentere Hardware</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Aesthetic\Kritik: statt Echo "Klotz" lieber versteckte Funktion</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Aesthetic\Kritik: Alexa Echo visuelles Feedback durch Ring statt verbal</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Aesthetic\Kritik: Alexa Aktivierungs-Piepton manchmal zu leise</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Gegen Nutzung: Fehleranfälligkeit Abhängigkeit von VUI</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Contra: Siri ruft irrtümlich den Notruf</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Contra spez. VUI: unerwartete unpassende Antworten</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Contra spez. VUI: Manuelle Kontrolle nötig bei Dateneingabe</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Wunschfunktion: Fließende Sprache transkribieren können</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\neg. Erfahrung: Unangenehme Konsequenzen durch Fehler des VUI</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Error-free\Kritik: Siri zu hohe Fehlerrate beim Diktieren</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Range of functions</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Range of functions\Pro/Contra spez. VUI: Vielfalt/Funktionsumfang</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Range of functions\Erweiterter Funktionsumfang</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Simplicity</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Support of the user</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Personal Fulfilment</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Humaneness</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Context-sensitivity</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Effectivity</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Efficiency</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Privacy</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Safety</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Data Security</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Capability to learn</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Quickness</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Intuitivity</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Help with errors</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Help with errors\neg. Erfahrung: fehlende Hilfestellung im Fehlerfall</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Help with errors\Sollfunktion: Feedback bei Fehlern</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Help with errors\Sollfunktion: Hilfe-Funktion</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Linking with third-party products</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Practical</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Fun</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Convenience</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Flexibility</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Independency</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Innovation</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Bekanntheitsgrad</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>UX-Aspects\Preis</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>Nutzer Mit Einschränkung</th>
+<th align='left' class="Style0 BHT" width="1.7%" white-space: nowrap>Zitierwürdig</th>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewK1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewJDE4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\InterviewK3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewJDE3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewK2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>7</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\Interview D1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewJDE1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\InterviewJ1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\interviewJDE2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>7</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Interviews\InterviewJ2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Survey\Heuristiken für Voice User Interfaces_intensiveUser</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Survey\Heuristiken für Voice User Interfaces  (ResponsesEnglisch)</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>15</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>18</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>16</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>17</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>10</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>11</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>13</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHI"  white-space: nowrap>Survey\Heuristiken für Voice User Interfaces  (ResponsesSpanish)</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHI"  white-space: nowrap>0</td>
+</tr>
+<tr>
+<td align='left' class="Style1 BHB"  white-space: nowrap>Survey\Heuristiken für Voice User Interfaces  (ResponsesGerman)</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>6</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>2</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>20</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>15</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>15</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>12</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>12</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>12</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>7</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>7</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>11</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>12</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>8</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>7</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>9</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>5</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>3</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>1</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>0</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>4</td>
+<td align='left' class="Style1 BHB"  white-space: nowrap>1</td>
+</tr>
+</table>
+</div></body>
+</html>

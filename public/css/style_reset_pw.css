@@ -1,0 +1,10 @@
+.reset {
+    height:220px;
+    display:flex;
+    justify-content:center;
+}
+
+.resetButton {
+    margin: 0 auto;
+    display: block;
+}

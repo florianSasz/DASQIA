@@ -1,0 +1,11 @@
+.delteProjectBubble {
+    width: fit-content;
+    padding: 20px;
+    padding-top: 5px;
+    margin: auto;
+}
+
+.headline {
+    padding: 0;
+    margin: 0;
+}

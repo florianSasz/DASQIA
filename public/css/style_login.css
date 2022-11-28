@@ -1,0 +1,25 @@
+.twoColumngrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.entranceSubBubble {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.registerButton {
+    position: relative;
+    top: 8px;
+}
+
+.resetPasswordButton {
+    position: relative;
+    top: 18px;
+}
+
+.infoText {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

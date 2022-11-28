@@ -1,0 +1,62 @@
+.pageBubbles {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.teamMembersBubble {
+    width: fit-content;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.teamMembersHeadline {
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.teamMemberNames {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.teamMemberEmails {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.projectHeadline {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin: 0;
+}
+
+.projectHeadlineCollapse {
+    cursor: pointer;
+}
+
+.Headlines {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.removeButton {
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.removeButton:after {
+    position: relative;
+    top: 3px;
+    right: 5px;
+    content: "\D7";
+    font-size: 25px;
+    color: red;
+}

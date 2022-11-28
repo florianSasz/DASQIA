@@ -1,0 +1,183 @@
+:root {
+    --blueText: rgb(87, 115, 255);
+    --contentBackgroundColor: white;
+    --dropShadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -2px 0px inset;
+    --bubbleBorderRad: 12px;
+}
+
+body {
+    background-image: radial-gradient(rgba(220,220,220,1) 0.8px, rgba(235,235,235,1) 0.8px);
+    background-size: 10px 10px;
+    margin: 0;
+    font-family: Arial; /*Helvetica, sans-serif;*/
+    font-size: 90%;
+}
+
+.bubble {
+    border-radius: var(--bubbleBorderRad);
+    background-color: var(--contentBackgroundColor);
+    box-shadow: var(--dropShadow);
+}
+
+.bubbleGrey {
+    border-radius: var(--bubbleBorderRad);
+    background-color: rgb(233, 233, 233);
+    box-shadow: var(--dropShadow);
+}
+
+.bubbleHeadline {
+    color: var(--blueText);
+    font-size: 27px;
+    margin-top: 0;
+}
+
+.blueSubHeadline {
+    color: var(--blueText);
+    font-size: 22px;
+}
+
+.blackSubHeadline {
+    font-size: 20px;
+}
+
+.button {
+    background-color: var(--blueText);
+    color: white;
+    padding: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 100%;
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(30, 50, 255);
+}
+
+.button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.topBanner {
+    padding: 15px;
+    padding-bottom: 10px;
+    
+    background-color: var(--contentBackgroundColor);
+    box-shadow: var(--dropShadow);
+}
+
+.bottomBanner {
+    height: 20vh;
+    background-color: var(--contentBackgroundColor);
+    color: black;
+    padding-top: 15px;
+    padding-left: 10px;
+    box-shadow: var(--dropShadow);
+}
+
+.redText {
+    color: rgb(255, 0, 0);
+}
+
+.greyText {
+    color: #5f5f5f;
+}
+
+.greenText {
+    color: #1ab61d;
+}
+
+.blueText {
+    color: var(--blueText);
+}
+
+.logoutButton {
+    float: right;
+}
+
+.sameLine {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.workspace {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    min-height: 80vh;
+}
+
+.redButton {
+    background-color: rgb(255, 110, 110);
+    border: 0;
+}
+
+.redButton:hover {
+    background-color: red;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popuptext {
+    visibility: hidden;
+    cursor: default;
+    background-color: rgb(233, 233, 233);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1; 
+    bottom: 125%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
+    width: 250px;
+    padding: 10px;
+}
+
+.popup .show {
+    visibility: visible;
+}
+
+.infoButton {
+    position: relative;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    transition-duration: 0.3s;
+    margin-right: 10px;
+}
+
+.infoButton:hover {
+    width: 27px;
+    height: 27px;
+}
+
+input[type="text"],input[type="password"], input[type="date"], select, textarea {
+    border-radius: 6px !important;
+    border: 1px solid grey;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.checkbox {
+    transform: scale(1.3);
+    accent-color: var(--blueText);
+    border-radius: 0;
+}

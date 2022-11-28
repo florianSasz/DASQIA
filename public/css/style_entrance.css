@@ -1,0 +1,27 @@
+.centerVer {
+    margin-top: 30vh;
+}
+
+.entranceBubble {
+    width: 225px;
+    margin: auto;
+    padding: 8px;
+    padding-top: 10px;
+}
+
+.entranceHeadline {
+    margin-bottom: 30px;
+}
+
+.inputContainer {
+    margin-bottom: 10px;
+}
+
+.submitButton {
+    margin: 0px;
+    margin-top: 15px;
+}
+
+.input {
+    width: 97%;
+}

@@ -1,0 +1,53 @@
+.codesBubble {
+    min-width: 600px;
+    padding: 20px;
+}
+
+.navigationButtons {
+    margin-top: 30px;
+}
+
+.codeContainer {
+    margin-left: 20px;
+}
+
+.codeName {
+    padding-left: 10px;
+}
+
+.codeLists {
+    margin: 20px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.removeCode {
+    color: white;
+    background-color: rgb(255, 30, 30) !important;
+}
+
+.removeChildCode {  
+    color: white;
+    background-color: rgb(247, 129, 19) !important;
+    cursor: default !important;
+}
+
+.existingCodeContainer:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-color: rgb(255, 100, 100);
+    color: white;
+}
+
+.existingCodeContainer {
+    background-color: rgb(233,233,233);
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}

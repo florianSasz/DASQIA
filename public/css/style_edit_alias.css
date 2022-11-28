@@ -1,0 +1,31 @@
+.aliasContainer {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 10px;
+    transition-duration: 0.3s;
+}
+
+.aliasContainer:hover {
+    cursor: pointer;
+    background-color: rgb(255, 100, 100);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+} 
+
+.aliasContainerRemove {
+    background-color: rgb(255, 50, 50);
+    color: white;
+}
+
+.userInfo {
+    margin: 10px;
+}
+
+.navigation {
+    margin-top: 20px;
+}

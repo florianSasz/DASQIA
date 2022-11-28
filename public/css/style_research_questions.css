@@ -1,0 +1,25 @@
+.rqHeadline {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.rqBubble {
+    width: fit-content;
+    padding: 20px;
+}
+
+.question {
+    margin: 0;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.addRqButton {
+    margin-top: 10px;
+}
+
+.navigationButtons {
+    margin-top: 35px;
+}

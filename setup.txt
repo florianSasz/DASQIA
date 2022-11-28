@@ -1,0 +1,17 @@
+[directories needed]
+	- components
+	- public
+	- project_logs (empty at the beginning)
+
+[setup e-mail server to use with builtin php function mail()]
+-  components/reset_password_processing.php:
+	- line 41: change email -> "From => "DASQIA <*yourEmailHere@x.com*>"
+	- line 22: change url: -> "https://*yourWebAdressHere*/create_new_password.php"
+
+[setup database]
+- create database structure with database/datase_structure.sql
+- components/database.php:
+	- line 43: change user
+	- line 44: change password
+	- line 45: change database name
+	- line 46: change databse host

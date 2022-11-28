@@ -1,0 +1,116 @@
+.assignmentBubble {
+    min-width: 600px;
+    padding: 20px;
+}
+
+.navigationButtons {
+    margin-top: 30px;
+}
+
+.rotate {
+    transform-origin: top left;
+    transform: rotate(-45deg);
+    position: relative;
+    left: 20px;
+    top: 25px;
+}
+
+.codeAssignmentTable {
+    border-collapse: collapse;
+}
+
+.markAllRQ {
+    border-left: 3px solid black;
+}
+
+.tableHead {
+    border-bottom: 3px solid black;
+}
+
+.filterBubble {
+    margin: 40px;
+    padding: 15px;
+}
+
+.filterMethodBubble {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.addKeyword {
+    margin: 10px;
+}
+
+.filterControls_checkbox {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.codeParent {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.notAssignedScope {
+    margin-top: 10px;
+}
+
+.checkboxLabel {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+.FilterPanelCheckbox {
+    margin-bottom: 10px;
+}
+
+.FilterPanelHeadline {
+    margin: 0;
+}
+
+.keywordContainer {
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    transition-duration: 0.3s;
+}
+
+.keywordContainer:hover {
+    background-color: rgb(255, 100, 100);
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition-duration: 0.3s;
+}
+
+.keywordContent {
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.tableRow {
+    border-bottom: 1px solid rgb(144, 144, 144);
+}
+
+.tableHeaderRow {
+    border-bottom: 2px solid black;
+}
+
+.tableColoumnAll {
+    border-left: 2px solid black
+}
+
+.checkboxTD {
+    margin: 10px;
+}
+
+.notAssignedCheckbox {
+    margin: 20px;
+}
+
+.test {
+    z-index: 2;
+}

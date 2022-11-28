@@ -1,0 +1,87 @@
+.projectBubble {
+    min-width: 1000px;
+}
+
+.projectContent {
+    padding-top: 5px;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.projectButtons {
+    margin-left: 5px;
+}
+
+.questionsMargin {
+    margin: 0;
+}
+
+.question:hover {
+    cursor: pointer;
+}
+
+.projectContentOffset {
+    margin-left: 20px;
+}
+
+.descriptionsOffset {
+    position: relative;
+    left: 20px;
+}
+
+.rqContainer {
+    margin-bottom: 10px;
+}
+
+.questionOffset {
+    position: relative;
+    left: 10px;
+}
+
+.documentsTable {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.documentsTd {
+    padding: 20px;
+    border-bottom: 1px solid rgb(144, 144, 144);
+}
+
+.documentsTh {
+    border-bottom: 2px solid black;
+}
+
+.diagramm {
+    margin-right: 40px;
+    margin-bottom: 40px; 
+}
+
+.downloadButtonsContainer {
+    padding-top: 10px;
+}
+
+.disableTransition {
+    transition-duration: 0s;
+}
+
+.tableWidth {
+    width: 100%;
+}
+
+.graphSettings {
+    background-color: white;
+    border-radius: var(--bubbleBorderRad);
+    padding: 20px;
+    padding-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+}
+
+.fitContent {
+    width: fit-content;
+}
+
+.test {
+    border-radius: 7px !important;
+}

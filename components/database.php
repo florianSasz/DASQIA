@@ -40,10 +40,10 @@ function getAliasTable(string $userType, &$table, &$idType) {
 
 class DatabaseAccess {
     private $pdo = null;
-    private $user = "root";
-    private $password = "Apfelbaum";
-    private $dbName = "projektarbeit";
-    private $host = "localhost";
+    private $user = ""; // add
+    private $password = ""; // add
+    private $dbName = ""; // add
+    private $host = ""; // add
     private $log = null;
 
     function __construct(bool $writeToProject=false) {

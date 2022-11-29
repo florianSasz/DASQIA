@@ -19,7 +19,7 @@ function sendResetMail(string $email) {
 
         $selector = bin2hex(random_bytes(8)); 
         $token = random_bytes(32);
-        $url = "http://localhost/projektarbeit/public/create_new_password.php"; // url to which the link for the pw reset will lead
+        $url = "https://yourWebAddressHere/create_new_password.php"; // url to which the link for the pw reset will lead
         $url .= "?selector=" . $selector . "&validator=" . bin2hex($token);
         $expires = date("U") + 600; // link is valid for 10min
 
@@ -40,7 +40,7 @@ function sendResetMail(string $email) {
         $headers = array(
             "MIME-Version" => "1.0",
             "Content-type" => "text/html;charset=UTF-8",
-            "From" => "DASQIA <florian369357@gmail.com>", // email that will be displayed in the email header
+            "From" => "DASQIA <yourEmailHere@x.com>", // email that will be displayed in the email header
         );
 
         mail($to,$subject,$txt,$headers);
